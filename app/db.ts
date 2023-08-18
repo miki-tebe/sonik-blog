@@ -80,7 +80,7 @@ export const findVideoById = async (db: D1Database, id: string) => {
 
 export const findVideosByChannelId = async (db: D1Database, id: string) => {
   const { results } = await db
-    .prepare(`SELECT * FROM videos WHERE channel_id = ?`)
+    .prepare(`SELECT * FROM videos WHERE channel_id = ? ORDER BY published DESC;`)
     .bind(id)
     .all<Video>();
   return results;
