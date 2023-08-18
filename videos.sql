@@ -1,0 +1,3 @@
+INSERT INTO videos VALUES('Cf-sItGhi24','https://www.youtube.com/watch?v=Cf-sItGhi24','Tekeste Solomon - Nsane | ንሳነ - New Eritrean Music 2023 (Official Video)','2023-08-16 16:45:05.000000','UCgdecrMD1EfiqFL_jlnPxvg',0);
+INSERT INTO videos VALUES('q0ZjT6xhdY4','https://www.youtube.com/watch?v=q0ZjT6xhdY4','Asseged Eshetu - Wedashalech (live performance) | አሰግድ እሽቱ - ወዳሻለች (አልበም ምርቃት)','2023-08-17 11:05:00.000000','UCTGGSvsHM52AuyEw2OapecA',0);
+INSERT INTO videos VALUES('KnGY8msSJds','https://www.youtube.com/watch?v=KnGY8msSJds','"ወዳሻለች"ዛሬ ማታ በ 12 ሰዓት በ#asseged_eshetu_official_youtube_channel ላይ ይለቃል  #instagood #photooftheday','2023-08-17 09:28:23.000000','UCTGGSvsHM52AuyEw2OapecA',0);
