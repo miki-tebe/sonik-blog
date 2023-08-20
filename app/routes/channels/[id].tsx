@@ -21,6 +21,7 @@ export default {
             src={`https://www.youtube.com/embed/VIDEO_ID?playlist=${youtubeUrls}`}
             title="Playlist"
             frameBorder="0"
+            class="aspect-video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>

@@ -1,7 +1,6 @@
-export type Article = {
+export type Suggestion = {
   id: string;
-  title: string;
-  content: string;
+  link: string;
   created_at: string;
 };
 
@@ -22,32 +21,16 @@ export type Video = {
   downloaded: number;
 };
 
-export const findAllArticles = async (db: D1Database) => {
-  const { results } = await db
-    .prepare(`SELECT * FROM articles ORDER BY created_at DESC`)
-    .all<Article>();
-  const articles = results;
-  return articles;
-};
-
-export const findArticleById = async (db: D1Database, id: string) => {
-  const article = await db
-    .prepare(`SELECT * FROM articles WHERE id = ?`)
-    .bind(id)
-    .first<Article>();
-  return article;
-};
-
-export const createArticle = async (
+export const createSuggestion = async (
   db: D1Database,
-  article: Pick<Article, "title" | "content">
+  suggestion: Pick<Suggestion, "link">
 ) => {
   const id = crypto.randomUUID();
   const { results } = await db
-    .prepare(`INSERT INTO articles(id, title, content) VALUES(?, ?, ?)`)
-    .bind(id, article.title, article.content)
+    .prepare(`INSERT INTO suggestions(id, title, content) VALUES(?, ?, ?)`)
+    .bind(id, suggestion.link)
     .run();
-  const articles = results;
+  const suggestions = results;
 };
 
 export const findAllChannels = async (db: D1Database) => {

@@ -23,7 +23,7 @@ export default {
                   <h3 class="text-2xl font-bold mb-2 text-gray-800 hover:text-gray-600 hover:text-underline">
                     {channel.name}
                   </h3>
-                  <div class="text-gray-500 text-sm">{channel.url}</div>
+                  <div class="text-gray-500 text-sm xs:text-xs sm:text-xs">{channel.url.substring(0, 50)}...</div>
                 </a>
               </li>
             ))}
