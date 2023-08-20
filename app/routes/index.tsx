@@ -17,12 +17,12 @@ export default {
             >
               Artist/Channel List
             </a>
-            <a
+            {/* <a
               href="/channels/create"
               class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
             >
               Suggest channel
-            </a>
+            </a> */}
           </div>
         </section>
       </div>
